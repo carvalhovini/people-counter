@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de Pessoas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+<body>
+    <header>
+        <h1>Contagem de Pessoas</h1>
+    </header>
+    <main>
+        <input type="file" id="inputFile" accept="image/*,video/*">
+        <div id="videoContainer">
+            <video id="inputVideo" controls style="display: none;"></video>
+        </div>
+        <div id="infoContainer"></div>
+        <p id="peopleCount">Número de Pessoas: 0</p>
+    </main>
+    <script src="contagem_pessoas.js"></script>
+</body>
+</html>
